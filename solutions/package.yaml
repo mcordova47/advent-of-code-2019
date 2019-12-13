@@ -8,7 +8,6 @@ copyright:           "2019 Author name here"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -21,6 +20,38 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- protolude
+
+default-extensions:
+  - AllowAmbiguousTypes
+  - BlockArguments
+  - DataKinds
+  - DeriveAnyClass
+  - DeriveGeneric
+  - DerivingStrategies
+  - DerivingVia
+  - DuplicateRecordFields
+  - FlexibleContexts
+  - FlexibleInstances
+  - GeneralizedNewtypeDeriving
+  - LambdaCase
+  - MultiParamTypeClasses
+  - MultiWayIf
+  - NamedFieldPuns
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - PartialTypeSignatures
+  - PatternSynonyms
+  - RankNTypes
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TransformListComp
+  - TypeApplications
+  - TypeFamilies
+  - TypeOperators
+  - TypeSynonymInstances
+  - UndecidableInstances
+  - ViewPatterns
 
 library:
   source-dirs: src
