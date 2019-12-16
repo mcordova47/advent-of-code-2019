@@ -7,7 +7,7 @@ import qualified Data.Sequence as Seq
 
 answer_1 :: Maybe Int
 answer_1 =
-    run input 1202
+    runAll input 1202
 
 answer_2 :: Maybe Int
 answer_2 =
@@ -15,13 +15,13 @@ answer_2 =
     where
         go :: Int -> Maybe Int -> Maybe Int
         go cur res =
-            if run input cur == Just 19690720 then
+            if runAll input cur == Just 19690720 then
                 Just cur
             else
                 res
 
-run :: Seq Int -> Int -> Maybe Int
-run instructions code =
+runAll :: Seq Int -> Int -> Maybe Int
+runAll instructions code =
     Seq.lookup 0 =<< Seq.lookup 0 (run 0 (Seq.chunksOf 4 instructions'))
     where
         run :: Int -> Seq (Seq Int) -> Seq (Seq Int)
