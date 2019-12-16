@@ -9,7 +9,6 @@ answer_1 :: Maybe Int
 answer_1 =
     run input 1202
 
--- TODO: This is pretty slow, try to make it faster
 answer_2 :: Maybe Int
 answer_2 =
     foldr go Nothing [0..9999]
