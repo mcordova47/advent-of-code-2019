@@ -22,6 +22,7 @@ dependencies:
 - base >= 4.7 && < 5
 - containers
 - protolude
+- text
 
 default-extensions:
   - AllowAmbiguousTypes
@@ -40,6 +41,7 @@ default-extensions:
   - MultiWayIf
   - NamedFieldPuns
   - NoImplicitPrelude
+  - NumericUnderscores
   - OverloadedStrings
   - PartialTypeSignatures
   - PatternSynonyms
@@ -78,3 +80,5 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - solutions
+    - tasty
+    - tasty-hunit
